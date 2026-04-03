@@ -592,6 +592,95 @@ footer { background: #051e33; padding: 44px 0 28px; text-align: center; }
 .footer-socials a:hover { background: var(--coral); color: #fff; }
 .footer-copy { color: rgba(255,255,255,.25); font-size: .82rem; }
 
+/* ─── 3-LAYER MODEL ─────────────────────────────── */
+.layers-intro {
+  max-width: 720px; margin: 0 auto 3rem;
+  text-align: center;
+  color: rgba(255,255,255,.82);
+  font-size: 1.05rem; line-height: 1.8;
+}
+.layers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.layer-card {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 20px;
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+  transition: transform .25s, background .25s, border-color .25s;
+}
+.layer-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,.13);
+  border-color: var(--coral);
+}
+.layer-num {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  background: var(--coral);
+  font-family: var(--font-head);
+  font-size: 1.9rem; font-weight: 700;
+  color: #fff; margin: 0 auto 1rem;
+}
+.layer-icon { font-size: 2.4rem; margin-bottom: .7rem; }
+.layer-card h3 {
+  font-family: var(--font-head);
+  font-size: 1.7rem; color: var(--white);
+  margin-bottom: .2rem; line-height: 1.2;
+}
+.layer-en {
+  font-size: .78rem; color: var(--coral);
+  font-weight: 700; font-family: var(--font-body);
+  letter-spacing: .8px; text-transform: uppercase;
+  margin-bottom: 1rem; display: block;
+}
+.layer-card p { color: rgba(255,255,255,.78); font-size: .93rem; line-height: 1.85; }
+
+/* ─── WHY CARDS ─────────────────────────────────── */
+.why-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; margin-top: 2.5rem;
+}
+.why-card {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 18px;
+  padding: 2.2rem 1.5rem; text-align: center;
+  transition: transform .25s, background .25s;
+}
+.why-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,.2);
+}
+.why-card-icon { font-size: 2.8rem; margin-bottom: .8rem; }
+.why-card h3 {
+  font-family: var(--font-head);
+  font-size: 1.55rem; color: var(--white); margin-bottom: .7rem;
+}
+.why-card p { color: rgba(255,255,255,.82); font-size: .92rem; line-height: 1.8; }
+
+/* ─── FOUNDERS BADGE ─────────────────────────────── */
+.founders-badge {
+  display: inline-block;
+  background: var(--coral);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: .78rem; font-weight: 700;
+  letter-spacing: .6px; text-transform: uppercase;
+  padding: 4px 14px; border-radius: 50px;
+  margin-bottom: .8rem;
+}
+.founders-intro {
+  max-width: 760px; margin: 0 auto 3rem;
+  text-align: center; font-size: 1.05rem; line-height: 1.8;
+}
+
 /* ─── RESPONSIVE — Elementor breakpoints ───────── */
 /* Tablet: max 1024px */
 @media (max-width: 1024px) {
@@ -599,6 +688,8 @@ footer { background: #051e33; padding: 44px 0 28px; text-align: center; }
   .hamburger { display: flex; }
   .how-bullets { grid-template-columns: repeat(2, 1fr); }
   .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .layers-grid { grid-template-columns: 1fr; max-width: 500px; margin: 2rem auto 0; }
+  .why-cards-grid { grid-template-columns: 1fr; max-width: 500px; margin: 2rem auto 0; }
 }
 
 /* Mobile: max 767px */

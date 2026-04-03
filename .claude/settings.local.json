@@ -5,7 +5,13 @@
       "Bash(git --version)",
       "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean init)",
       "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean add .)",
-      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean commit -m \"Initial commit\")"
+      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean commit -m \"Initial commit\")",
+      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean remote -v)",
+      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean remote add origin https://github.com/eyal-hk/landin-main.git)",
+      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean push -u origin main)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }
