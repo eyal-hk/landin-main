@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(git --version)",
+      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean init)",
+      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean add .)",
+      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean commit -m \"Initial commit\")"
+    ]
+  }
+}
