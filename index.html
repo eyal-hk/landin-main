@@ -652,6 +652,14 @@ function toggleFaq(btn) {
   if (!isOpen) item.classList.add('open');
 }
 
+// Scroll fade-in observer
+const observer = new IntersectionObserver(
+  els => els.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.15 }
+);
+document.querySelectorAll('.layer-card, .why-card, .benefit-card, .team-card, .faq-item, .review-card')
+  .forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
+
 document.getElementById('main-form').addEventListener('submit', function(e) {
   e.preventDefault();
   const data = new FormData(this);
@@ -666,6 +674,9 @@ document.getElementById('main-form').addEventListener('submit', function(e) {
   });
 });
 </script>
+
+<!-- Mobile floating CTA -->
+<a href="#contact" class="btn btn-gold mobile-fab">בדוק התאמה לליווי פיננסי</a>
 
 </body>
 </html>
