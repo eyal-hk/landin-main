@@ -11,7 +11,12 @@
       "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean push -u origin main)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(for dir:*)",
+      "Bash(do echo:*)",
+      "Bash(echo 'לא git' ls $dir*.toml)",
+      "Bash(git -C:*)",
+      "Bash(git -C /Users/eyalhazut/Documents/Claude/Projects/hk/netlify-clean push origin main)"
     ]
   }
 }
